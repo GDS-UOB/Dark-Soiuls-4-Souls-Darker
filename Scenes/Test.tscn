@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsh4iqhici20"]
+
+[ext_resource type="PackedScene" uid="uid://df7mbptxunbb7" path="res://Prefabs/player.tscn" id="1_g16b3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_psgi0"]
+size = Vector2(658, 20)
+
+[node name="Test" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_g16b3")]
+position = Vector2(187, 43)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(17, 86)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(319, 0)
+shape = SubResource("RectangleShape2D_psgi0")
+
+[node name="Panel" type="Panel" parent="StaticBody2D"]
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 648.0
+offset_bottom = 10.0

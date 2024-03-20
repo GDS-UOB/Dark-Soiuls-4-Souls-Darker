@@ -1,3 +1,20 @@
-[gd_scene format=3 uid="uid://df7mbptxunbb7"]
+[gd_scene load_steps=4 format=3 uid="uid://df7mbptxunbb7"]
 
-[node name="Player" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://c3bx133tu1kn0" path="res://icon.svg" id="1_6heie"]
+[ext_resource type="Script" path="res://movement.gd" id="1_b1xtb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0j8yl"]
+
+[node name="Player" type="RigidBody2D"]
+lock_rotation = true
+script = ExtResource("1_b1xtb")
+
+[node name="Capsule_colision_shape" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_0j8yl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9.53674e-07, 0.25)
+scale = Vector2(0.101563, 0.183594)
+texture = ExtResource("1_6heie")
+
+[node name="Camera2D" type="Camera2D" parent="."]
