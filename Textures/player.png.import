@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btg57d3eph7pl"
-path="res://.godot/imported/player.png-0276da3b686e4356fa8511463da2d53e.ctex"
+path="res://.godot/imported/player.png-37d6d449c686f6028362b8d8a235ada7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dark-soiuls game graphics/player.png"
-dest_files=["res://.godot/imported/player.png-0276da3b686e4356fa8511463da2d53e.ctex"]
+source_file="res://Textures/player.png"
+dest_files=["res://.godot/imported/player.png-37d6d449c686f6028362b8d8a235ada7.ctex"]
 
 [params]
 
